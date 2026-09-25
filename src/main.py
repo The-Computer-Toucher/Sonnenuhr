@@ -47,7 +47,7 @@ def update_tracking():
     # checks if there is satellite data loaded
     if satellite_data:
         # displays the first satellite # todo: make a thing so that the user can select the satellite from a list
-        gui.update_satellite(satellite_data[30]) # [num] is the number of tles down in the load list of tles
+        gui.update_satellite(satellite_data[0]) # [num] is the number of tles down in the load list of tles
 
     # this runs again in 500 ms #? if i add the settign to change the update rate, make it 100 ish ms minimum; pretty sure it gets chopy at lower rate becasue it has to update all of the satellites-inefficient
     #? i just had an idea, update the current satellite you the user has selected to track and update it more frequnlty, and update the position of the other satellites in the background at a lower rate
